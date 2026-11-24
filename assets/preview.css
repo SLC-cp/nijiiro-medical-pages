@@ -120,7 +120,7 @@
 }
 .pv-page ol.pv-flow p.txt { margin: 0; line-height: 1.9; }
 
-/* テキスト（左・7）と画像（右・3）の2カラム。スマホでは縦並び */
+/* テキスト（左・7）と画像（右・3）の2カラム。スマホでも横並びのまま */
 .pv-page .pv-media {
   display: flex;
   align-items: flex-start;
@@ -180,8 +180,7 @@ mark.pv-check {
 @media (max-width: 767px) {
   .pv-page section { margin-bottom: 50px; }
   .pv-review { padding: 16px; }
-  .pv-page .pv-media { display: block; }
-  .pv-page .pv-media-img { margin: 1em auto 0; max-width: 80%; }
+  .pv-page .pv-media { gap: 16px; }
   .pv-page ol.pv-flow > li.pv-flow-item { padding: 18px 16px; margin-bottom: 38px; min-height: 0; }
   .pv-page ol.pv-flow > li.pv-flow-item::before {
     content: "STEP " counter(pvflow, decimal-leading-zero);
