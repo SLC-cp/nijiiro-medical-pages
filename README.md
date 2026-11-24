@@ -56,6 +56,7 @@ assets/preview.css      … プレビュー用の補助スタイル
 | 箇条書き | `<ul class="list_default pv-list"><li>…</li></ul>` |
 | 流れ（ステップ） | `<ol class="pv-flow">` の中に `<li class="pv-flow-item"><h3 class="pv-flow-ttl kozuka">見出し</h3><p class="txt">…</p></li>` を並べる（STEP番号と矢印は自動） |
 | テキストと画像の2カラム（7：3、右が画像） | `<div class="pv-media"><div class="pv-media-body"><p class="txt">…</p></div><figure class="pv-media-img"><img src="../assets/img/ファイル名.jpg" alt="…"></figure></div>` |
+| 症例写真（治療前 → 治療後） | `<div class="pv-case">` の中に、治療前の `<figure class="pv-case-img">`、`<span class="pv-case-arrow">`、治療後の `<figure class="pv-case-img">` の順で並べる |
 | 料金表 | `<div class="tbl_default"><table>…</table></div>` |
 | 注記 | `<p class="txt pv-note">…</p>` |
 
