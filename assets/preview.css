@@ -166,9 +166,10 @@
 }
 
 /* 症例の治療期間・費用の表 */
-.pv-page .pv-case-tbl { margin: 0 0 2.4em; }
-.pv-page .pv-case-tbl table { width: 100%; }
-.pv-page .pv-case-tbl th { width: 22%; white-space: nowrap; }
+.pv-page .tbl_default.pv-case-tbl { width: auto; max-width: 820px; margin: 0 auto 2.4em; text-align: center; }
+.pv-page .tbl_default.pv-case-tbl table { display: inline-table; width: auto; min-width: 0; margin: 0; text-align: left; }
+.pv-page .tbl_default.pv-case-tbl th { width: auto; white-space: nowrap; padding-left: 2em; padding-right: 2em; text-align: center; }
+.pv-page .tbl_default.pv-case-tbl td { width: auto; padding-left: 2em; padding-right: 2em; }
 
 /* 料金表 */
 .pv-page .tbl_default { margin: 0 0 1.6em; }
