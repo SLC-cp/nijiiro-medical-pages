@@ -54,6 +54,7 @@ assets/preview.css      … プレビュー用の補助スタイル
 | 小見出し | `<h3 class="copy kozuka">…</h3>` |
 | 本文 | `<p class="txt">…</p>` |
 | 箇条書き | `<ul class="list_default pv-list"><li>…</li></ul>` |
+| 流れ（ステップ） | `<ol class="pv-flow">` の中に `<li class="pv-flow-item"><h3 class="pv-flow-ttl kozuka">見出し</h3><p class="txt">…</p></li>` を並べる（STEP番号と矢印は自動） |
 | 料金表 | `<div class="tbl_default"><table>…</table></div>` |
 | 注記 | `<p class="txt pv-note">…</p>` |
 

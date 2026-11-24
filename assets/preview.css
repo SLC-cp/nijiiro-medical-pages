@@ -55,6 +55,71 @@
 }
 .pv-page ul.pv-list.pv-list-col4 > li { width: auto; margin-bottom: 0; }
 
+/* 流れ（ステップ）：各項目を箱に入れ、下向きの矢印でつなぐ */
+.pv-page ol.pv-flow {
+  margin: 2em 0 2.4em;
+  padding: 0;
+  list-style: none;
+  counter-reset: pvflow;
+}
+.pv-page ol.pv-flow > li.pv-flow-item {
+  position: relative;
+  margin: 0 0 46px;
+  padding: 26px 30px 26px 130px;
+  min-height: 76px;
+  border: 2px solid #f0a030;
+  border-radius: 12px;
+  background: #fffaf2;
+  counter-increment: pvflow;
+  list-style: none;
+}
+.pv-page ol.pv-flow > li.pv-flow-item:last-child { margin-bottom: 0; }
+/* STEPの丸い番号 */
+.pv-page ol.pv-flow > li.pv-flow-item::before {
+  content: "STEP\A" counter(pvflow, decimal-leading-zero);
+  white-space: pre;
+  position: absolute;
+  left: 28px;
+  top: 26px;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: #f08a24;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.25;
+  letter-spacing: .06em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* 次の箱への矢印 */
+.pv-page ol.pv-flow > li.pv-flow-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -36px;
+  margin-left: -20px;
+  border-style: solid;
+  border-width: 20px 20px 0;
+  border-color: #f0a030 transparent transparent;
+}
+.pv-page ol.pv-flow h3.pv-flow-ttl {
+  margin: 0 0 .5em;
+  padding: 0;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #e8730c;
+  border: 0;
+  background: none;
+  text-align: left;
+}
+.pv-page ol.pv-flow p.txt { margin: 0; line-height: 1.9; }
+
 /* 料金表 */
 .pv-page .tbl_default { margin: 0 0 1.6em; }
 
@@ -102,6 +167,20 @@ mark.pv-check {
 @media (max-width: 767px) {
   .pv-page section { margin-bottom: 50px; }
   .pv-review { padding: 16px; }
+  .pv-page ol.pv-flow > li.pv-flow-item { padding: 18px 16px; margin-bottom: 38px; min-height: 0; }
+  .pv-page ol.pv-flow > li.pv-flow-item::before {
+    content: "STEP " counter(pvflow, decimal-leading-zero);
+    position: static;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 0 0 10px;
+    padding: 3px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+  }
+  .pv-page ol.pv-flow > li.pv-flow-item:not(:last-child)::after { bottom: -30px; margin-left: -16px; border-width: 16px 16px 0; }
+  .pv-page ol.pv-flow h3.pv-flow-ttl { font-size: 4.6vw; }
   .pv-page ul.pv-list.pv-list-col4 { grid-template-columns: repeat(2, 1fr); }
 }
 
