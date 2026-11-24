@@ -47,6 +47,14 @@
   background: #f0a030;
 }
 
+/* 箇条書きを横4列に並べる（8項目なら2行）。スマホでは2列 */
+.pv-page ul.pv-list.pv-list-col4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .4em 1.2em;
+}
+.pv-page ul.pv-list.pv-list-col4 > li { width: auto; margin-bottom: 0; }
+
 /* 料金表 */
 .pv-page .tbl_default { margin: 0 0 1.6em; }
 
@@ -94,6 +102,7 @@ mark.pv-check {
 @media (max-width: 767px) {
   .pv-page section { margin-bottom: 50px; }
   .pv-review { padding: 16px; }
+  .pv-page ul.pv-list.pv-list-col4 { grid-template-columns: repeat(2, 1fr); }
 }
 
 /* 診療案内：下層ページへのリンクボタン（本番テーマの page.php に入れたものと同じ） */
