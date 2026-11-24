@@ -120,6 +120,19 @@
 }
 .pv-page ol.pv-flow p.txt { margin: 0; line-height: 1.9; }
 
+/* テキスト（左・7）と画像（右・3）の2カラム。スマホでは縦並び */
+.pv-page .pv-media {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 0 0 1.4em;
+}
+.pv-page .pv-media-body { flex: 7 1 0; min-width: 0; }
+.pv-page .pv-media-body > p.txt { margin: 0 0 1.4em; line-height: 2; }
+.pv-page .pv-media-body > p.txt:last-child { margin-bottom: 0; }
+.pv-page .pv-media-img { flex: 3 1 0; min-width: 0; margin: .5em 0 0; }
+.pv-page .pv-media-img img { display: block; width: 100%; height: auto; border-radius: 10px; }
+
 /* 料金表 */
 .pv-page .tbl_default { margin: 0 0 1.6em; }
 
@@ -167,6 +180,8 @@ mark.pv-check {
 @media (max-width: 767px) {
   .pv-page section { margin-bottom: 50px; }
   .pv-review { padding: 16px; }
+  .pv-page .pv-media { display: block; }
+  .pv-page .pv-media-img { margin: 1em auto 0; max-width: 80%; }
   .pv-page ol.pv-flow > li.pv-flow-item { padding: 18px 16px; margin-bottom: 38px; min-height: 0; }
   .pv-page ol.pv-flow > li.pv-flow-item::before {
     content: "STEP " counter(pvflow, decimal-leading-zero);

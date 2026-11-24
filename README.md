@@ -55,6 +55,7 @@ assets/preview.css      … プレビュー用の補助スタイル
 | 本文 | `<p class="txt">…</p>` |
 | 箇条書き | `<ul class="list_default pv-list"><li>…</li></ul>` |
 | 流れ（ステップ） | `<ol class="pv-flow">` の中に `<li class="pv-flow-item"><h3 class="pv-flow-ttl kozuka">見出し</h3><p class="txt">…</p></li>` を並べる（STEP番号と矢印は自動） |
+| テキストと画像の2カラム（7：3、右が画像） | `<div class="pv-media"><div class="pv-media-body"><p class="txt">…</p></div><figure class="pv-media-img"><img src="../assets/img/ファイル名.jpg" alt="…"></figure></div>` |
 | 料金表 | `<div class="tbl_default"><table>…</table></div>` |
 | 注記 | `<p class="txt pv-note">…</p>` |
 
