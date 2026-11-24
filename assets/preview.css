@@ -165,6 +165,11 @@
   border-color: transparent transparent transparent #f0a030;
 }
 
+/* 症例の治療期間・費用の表 */
+.pv-page .pv-case-tbl { margin: 0 0 2.4em; }
+.pv-page .pv-case-tbl table { width: 100%; }
+.pv-page .pv-case-tbl th { width: 22%; white-space: nowrap; }
+
 /* 料金表 */
 .pv-page .tbl_default { margin: 0 0 1.6em; }
 
