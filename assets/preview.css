@@ -282,6 +282,7 @@ mark.pv-check {
 }
 .medical-more-btn:hover { opacity: .75; }
 .medical-more-btn + .medical-more-btn { margin-left: 12px; }
+.medical-more-btn:not(:only-child) { min-width: 0; padding: 18px 50px 18px 30px; font-size: 16px; }
 .medical-more { line-height: 2.6; }
 @media (max-width: 767px) {
   .medical-more { margin-top: 30px; }
