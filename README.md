@@ -62,14 +62,13 @@ assets/preview.css      … プレビュー用の補助スタイル
 | 料金表 | `<div class="tbl_default"><table>…</table></div>` |
 | 注記 | `<p class="txt pv-note">…</p>` |
 
-タイトルと説明文を変えるときは、ページ先頭の `<title>` と `<meta name="description">`、ページ下部の確認事項ブロックの両方を直します。
+タイトルと説明文を変えるときは、ページ先頭の `<title>` と `<meta name="description">`を直します。
 
 ## 【要確認】について
 
 本文中の黄色い `【要確認：…】` は、医院への確認が必要な箇所です。
 
 - 確認が取れたら、`<mark class="pv-check">…</mark>` ごと、確認した内容に書き換えるか削除します。
-- 各ページ下部の「公開前の確認事項」ブロック（`<aside class="pv-review">`）は、公開時に丸ごと削除します。
 - 料金・症例・リスクなどの記載は、医療広告ガイドラインに関わります。公開前に必ず院長の確認を取ってください。
 
 ## GitHub Pagesで見る手順
