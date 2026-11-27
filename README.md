@@ -1,20 +1,22 @@
 # にじいろ歯科 診療ページ（プレビュー）
 
-にじいろ歯科おとなこども矯正歯科（happy-hahaha.jp）の、診療案内の下層ページ8本の確認用プレビューです。
+にじいろ歯科おとなこども矯正歯科（happy-hahaha.jp）の、診療案内の下層ページ10本の確認用プレビューです。
 静的なHTMLで、ビルドは不要です。GitHub Pagesでそのまま表示できます。
 
 ## ページ一覧
 
 | No. | ページ | フォルダ | 公開時のURL（案） |
 |---|---|---|---|
-| 1 | 一般歯科 | `general-dentistry/` | `/medical/general-dentistry/` |
-| 2 | 矯正歯科 | `orthodontics/` | `/medical/orthodontics/` |
-| 3 | 小児歯科 | `pediatric-dentistry/` | `/medical/pediatric-dentistry/` |
-| 4 | 予防歯科 | `preventive-dentistry/` | `/medical/preventive-dentistry/` |
-| 5 | ホワイトニング | `whitening/` | `/medical/whitening/` |
-| 6 | インプラント | `implant/` | `/medical/implant/` |
-| 7 | 入れ歯 | `denture/` | `/medical/denture/` |
-| 8 | 訪問診療 | `home-visit/` | `/medical/home-visit/` |
+| 1 | 虫歯治療 | `tooth-decay/` | `/medical/tooth-decay/` |
+| 2 | 親知らずの抜歯 | `wisdom-tooth/` | `/medical/wisdom-tooth/` |
+| 3 | 歯周病治療 | `periodontal-treatment/` | `/medical/periodontal-treatment/` |
+| 4 | 矯正歯科 | `orthodontics/` | `/medical/orthodontics/` |
+| 5 | 小児歯科 | `pediatric-dentistry/` | `/medical/pediatric-dentistry/` |
+| 6 | 予防歯科 | `preventive-dentistry/` | `/medical/preventive-dentistry/` |
+| 7 | ホワイトニング | `whitening/` | `/medical/whitening/` |
+| 8 | インプラント | `implant/` | `/medical/implant/` |
+| 9 | 入れ歯 | `denture/` | `/medical/denture/` |
+| 10 | 訪問診療 | `home-visit/` | `/medical/home-visit/` |
 
 原稿の元は、コンテンツ制作進捗ボード（Googleスプレッドシート）に載っている各Googleドキュメントです。
 2026年11月24日時点の原稿から作成しました。
@@ -22,7 +24,7 @@
 ## 構成
 
 ```
-index.html              … 8ページの一覧
+index.html              … 10ページの一覧
 <フォルダ名>/index.html  … 各ページ本体
 medical/index.html      … 既存の診療案内ページに、各ページへのリンクボタンを追加した案
 assets/preview.css      … プレビュー用の補助スタイル
