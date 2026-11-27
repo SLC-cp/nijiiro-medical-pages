@@ -55,13 +55,13 @@
 }
 .pv-page ul.pv-list.pv-list-col4 > li { width: auto; margin-bottom: 0; }
 
-/* 箇条書きを横3列に並べる（6項目なら2行）。スマホでは1列 */
-.pv-page ul.pv-list.pv-list-col3 {
+/* 箇条書きを横2列に並べる（6項目なら3行）。スマホでは1列 */
+.pv-page ul.pv-list.pv-list-col2 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: .4em 1.2em;
 }
-.pv-page ul.pv-list.pv-list-col3 > li { width: auto; margin-bottom: 0; }
+.pv-page ul.pv-list.pv-list-col2 > li { width: auto; margin-bottom: 0; }
 
 /* 流れ（ステップ）：各項目を箱に入れ、下向きの矢印でつなぐ */
 .pv-page ol.pv-flow {
@@ -245,7 +245,7 @@ mark.pv-check {
   .pv-page ol.pv-flow > li.pv-flow-item:not(:last-child)::after { bottom: -30px; margin-left: -16px; border-width: 16px 16px 0; }
   .pv-page ol.pv-flow h3.pv-flow-ttl { font-size: 4.6vw; }
   .pv-page ul.pv-list.pv-list-col4 { grid-template-columns: repeat(2, 1fr); }
-  .pv-page ul.pv-list.pv-list-col3 { grid-template-columns: 1fr; }
+  .pv-page ul.pv-list.pv-list-col2 { grid-template-columns: 1fr; }
 }
 
 /* 診療案内：下層ページへのリンクボタン（本番テーマの page.php に入れたものと同じ） */
